@@ -1,0 +1,10 @@
+# directories
+.venv/
+.pytest_cache/
+.vscode/
+
+# DB
+*.sqlite3
+
+# files
+.env
