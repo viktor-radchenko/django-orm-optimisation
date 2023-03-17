@@ -69,7 +69,7 @@ TEMPLATES = [
     # Jinja2 setup
     # {
     #     'BACKEND': 'django.template.backends.jinja2.Jinja2',
-    #     'DIRS': ['wishlist/templates'],
+    #     'DIRS': [],
     #     'APP_DIRS': True,
     #     'OPTIONS': {
     #         'context_processors': [
