@@ -1,8 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
 # directories
 .venv/
 .pytest_cache/
 .vscode/
-__pycache__/
 
 # DB
 *.sqlite3
@@ -10,3 +14,18 @@ __pycache__/
 # files
 .env
 *.pyc
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
