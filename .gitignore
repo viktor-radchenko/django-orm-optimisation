@@ -2,9 +2,11 @@
 .venv/
 .pytest_cache/
 .vscode/
+__pycache__/
 
 # DB
 *.sqlite3
 
 # files
 .env
+*.pyc
