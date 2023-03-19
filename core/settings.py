@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-from datetime import timedelta
+
 
 load_dotenv()
 
@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "debug_toolbar",
+    "app",
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "core.urls"
 
+
+AUTH_USER_MODEL = "app.CustomUser"
+
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+    "app.backends.EmailOrUsernameModelBackend",
+]
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -65,7 +74,6 @@ TEMPLATES = [
             ],
         },
     },
-    
     # Jinja2 setup
     # {
     #     'BACKEND': 'django.template.backends.jinja2.Jinja2',
